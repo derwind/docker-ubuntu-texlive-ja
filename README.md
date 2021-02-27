@@ -9,3 +9,7 @@ Inspired by [Paperist/docker-alpine-texlive-ja], [toshi-ara/docker-alpine-texliv
 ```bash
 $ docker run --rm -it -v $PWD:/workdir derwind/ubuntu-texlive-ja
 ```
+
+## Supplement
+
+If you wish to install full packages, it suffices to replace `scheme-basic` by `scheme-full` in Dockerfile.
