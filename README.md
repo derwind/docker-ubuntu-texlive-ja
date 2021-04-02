@@ -4,6 +4,10 @@
 
 Inspired by [Paperist/docker-alpine-texlive-ja], [toshi-ara/docker-alpine-texlive-ja] and [korosuke613/docker-ubuntu-texlive-ja].
 
+[Paperist/docker-alpine-texlive-ja]: https://github.com/Paperist/docker-alpine-texlive-ja
+[toshi-ara/docker-alpine-texlive-ja]: https://github.com/toshi-ara/docker-alpine-texlive-ja
+[korosuke613/docker-ubuntu-texlive-ja]: https://github.com/korosuke613/docker-ubuntu-texlive-ja
+
 ## Usage
 
 ```bash
