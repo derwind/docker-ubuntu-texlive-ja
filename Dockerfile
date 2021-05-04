@@ -1,12 +1,12 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV PATH /usr/local/texlive/2020/bin/x86_64-linux:$PATH
+ENV PATH /usr/local/texlive/2021/bin/x86_64-linux:$PATH
 
 RUN apt update && apt install -y \
     curl perl wget && \
     mkdir /tmp/install-tl-unx && \
-    curl -L ftp://tug.org/historic/systems/texlive/2020/install-tl-unx.tar.gz | \
+    curl -L ftp://tug.org/historic/systems/texlive/2021/install-tl-unx.tar.gz | \
       tar -xz -C /tmp/install-tl-unx --strip-components=1 && \
     printf "%s\n" \
       "selected_scheme scheme-basic" \
