@@ -1,13 +1,13 @@
 FROM ubuntu:20.04
 
-ENV DEBIAN_FRONTEND noninteractive
-ENV PATH /usr/local/texlive/2021/bin/x86_64-linux:$PATH
+ENV DEBIAN_FRONTEND=noninteractive
+ENV PATH=/usr/local/texlive/2024/bin/x86_64-linux:$PATH
 
 RUN dpkg --add-architecture amd64 && \
     apt update && apt install -y \
     curl perl wget libfontconfig1:amd64 && \
     mkdir /tmp/install-tl-unx && \
-    curl -L ftp://tug.org/historic/systems/texlive/2021/install-tl-unx.tar.gz | \
+    curl -L ftp://tug.org/historic/systems/texlive/2024/install-tl-unx.tar.gz | \
       tar -xz -C /tmp/install-tl-unx --strip-components=1 && \
     printf "%s\n" \
       "selected_scheme scheme-basic" \
